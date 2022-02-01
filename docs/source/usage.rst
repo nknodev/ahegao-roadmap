@@ -1,34 +1,24 @@
-Usage
+Kodik
 =====
 
-.. _installation:
+.. _/getInfo:
 
-Installation
+/getInfo
 ------------
 
-To use Lumache, first install it using pip:
+Этот метод достает инфу из API Кодика, Шики и Аниксарта, вроде:
 
-.. code-block:: console
+.. code-block:: curl
+   /getInfo?src=  -  название или ссылка на то, что ищем
+            token=   -  токенский(не токийский!)
+            by=   -  как ищем(link - через ссылку; name - по имени)
+Получаете
 
-   (.venv) $ pip install lumache
+.. code-block:: json
+   {
+   "title": "Дота2 - топ", // Russian title
+   "title_en": "Dota2 - is best", // Eng Title
+   "title_orig": "Ymete kudasai", // Original(Japan or Chinese) title
+   "pic": "https://static.findanime.net/uploads/pics/01/15/706.jpg", // 
 
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
 
