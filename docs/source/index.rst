@@ -1,22 +1,21 @@
-Welcome to Lumache's documentation!
+Приветствуем в документации Ahegao API!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Ahegao API** - это крупная API с использованием всех доступных в СНГ API сервисов!
+Ahegao использует такие сервисы как ``AnixArt API``, ``Kodik API``, ``MyAnimeList API``, ``Shikimori API``, ``Tenor API``(для gif-реакций) и некоторые другие.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Наша задача создать нечто, что будет помогать разработчикам аниме приложений, так как ничего внятного среди REST-API интерфейсов в СНГ по просту нет! Также еще одной из всего списка наших задач - обеспечить работу с прямыми, декодированными видеофайлами(более подробно описано здесь :ref:`/getVideo`).
 
 .. note::
 
-   This project is under active development.
+   К вашему вниманию! Проект находится в активной стадии разработки, но он еще не готов) Потерпите немного.
 
-Contents
+Классы API
 --------
 
 .. toctree::
 
-   usage
-   api
+   kodik
+   profile
+   manga
+   
