@@ -1,9 +1,7 @@
-Template for the Read the Docs tutorial
+RoadMap For Ahegao API
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Technical repo for Ahegao Devs.
 
-Read the tutorial here:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+(c)[Ahegao Team](https://ahegao.ovh) 2022
