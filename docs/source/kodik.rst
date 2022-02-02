@@ -64,5 +64,5 @@
    
 .. note:: 
    
-   К вашему вниманию: у нас нет возможности декодировать blob-ы, так как они довольно непросто устроены, если вы используете JS в своем проекте можете использовать [это]
-[это]: https://stackoverflow.com/questions/14952052/convert-blob-url-to-normal-url#:~:text=function%20blobToDataURL(blob%2C%20callback)%20%7B%0A%20%20var%20fileReader%20%3D%20new%20FileReader()%3B%0A%20%20fileReader.onload%20%3D%20function(e)%20%7Bcallback(e.target.result)%3B%7D%0A%20%20fileReader.readAsDataURL(blob)%3B%0A%7D
+   К вашему вниманию: у нас нет возможности декодировать blob-ы, так как они довольно непросто устроены, если вы используете JS в своем проекте можете использовать `это`_
+.. _это: https://stackoverflow.com/questions/14952052/convert-blob-url-to-normal-url
