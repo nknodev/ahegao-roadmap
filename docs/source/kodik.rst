@@ -1,4 +1,4 @@
-Kodik
+/kodik
 =====
 
 .. _/getInfo:
