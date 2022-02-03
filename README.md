@@ -3,5 +3,6 @@ RoadMap For Ahegao API
 
 Technical repo for Ahegao Devs.
 
+![Logo](img/ah2-150.png)
 
-(c)Ahegao Team[https://ahegao.ovh] 2022
+[©Ahegao Team](https://ahegao.ovh) 2022

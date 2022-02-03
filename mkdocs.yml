@@ -1,0 +1,46 @@
+site_name: ahegao-roadmap
+#repo_url: https://github.com/ParTy-Play-go/ahegao-roadmap
+site_author: SantaSpeen | ParTyPlayGo
+remote_name: main
+use_directory_urls: true
+
+nav:
+    - Введение: index.md
+    - Общая информация:
+        Быстрое начало: home
+        Примеры использования: home/examples.md
+    - Ahegao API:
+        - Быстрое начало: ahegao
+    - Ahegao API | Anixart API:
+        - Быстрое начало: anixart
+    - Ahegao API | MyAnimeList API:
+        - Быстрое начало: mal
+    - Ahegao API | Kodik API:
+        - Быстрое начало: kodik
+        - video: kodik/video.md
+    - Ahegao API | Shikimori API:
+        - Быстрое начало: shiki
+    - Ahegao API | Tenor API:
+        - Быстрое начало: tenor
+
+    - Обратная связь: callback.md
+
+theme:
+  name: material
+  locale: ru
+  highlightjs: true
+  palette:
+    primary: white
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify

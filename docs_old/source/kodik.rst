@@ -1,45 +1,47 @@
 /kodik
 =====
 
-.. _/getInfo:
+.. _/video.info:
 
-/getInfo
+/video.info
 ------------
 
 Этот метод достает инфу из API Кодика, Шики и Аниксарта, вроде:
 
 .. code-block:: console
 
-   /getInfo?src=  -  название или ссылка на то, что ищем *ОБЯЗАТЕЛЬНЫЙ
-            token=   -  токенский(не токийский!) *ОБЯЗАТЕЛЬНЫЙ
-            by=   -  как ищем(link - через ссылку; name - по имени) *ОБЯЗАТЕЛЬНЫЙ
-Получаете
-
+   /kodik/getInfo?src=  -  название или ссылка на то, что ищем *ОБЯЗАТЕЛЬНЫЙ
+                token=   -  токенский(не токийский!) *ОБЯЗАТЕЛЬНЫЙ
+                by=   -  как ищем(link - через ссылку; name - по имени) *ОБЯЗАТЕЛЬНЫЙ
+Вывод:
 .. code-block:: console
 
-   {
-   "title": "Дота2 - топ", // Название на русском
-   "title_en": "Dota2 - is best", // Название на английском
-   "title_orig": "Ymete kudasai", // Оригинальное(на Японском или Китайском) название
-   "pic": "https://static.findanime.net/uploads/pics/01/15/706.jpg", // Картинка(не превью)
-   "shiki": "https://shikimori.one/...", // ссылка на шики
-   "releaseyear": 2017, // Год релиза(тип int)
-   "releasestatus": "ongoing", // Статус выхода: ongoing - выходит сейчас; released - вышел; announce - анонс.
-   "eps": 12, // Эпизодов(тип int)
-   "score": 4.12, // Оценки, указываются до 5(тип float)
-   "mangaauthor": "Dagiwara Daisuke", // Автор манги(инфа с шики)
-   "director":  "Kana Fujiwara", // Режиссер
-   tags: [ //
-      "romantic": true, // boolean
-      "comedy": true,  // boolean
-      // ...
-   ],
-   casts: [
-      "anilibria": true, // boolean
-      "anidub": false,  // boolean
-   ]
-   "statusAPI": 200, //int
-   }
+    {
+    "code": 0 // int
+    "object":
+               {
+               "title": "Дота2 - топ", // Название на русском
+               "title_en": "Dota2 - is best", // Название на английском
+               "title_orig": "Ymete kudasai", // Оригинальное(на Японском или Китайском) название
+               "pic": "https://static.findanime.net/uploads/pics/01/15/706.jpg", // Картинка(не превью)
+               "shiki": "https://shikimori.one/...", // ссылка на шики
+               "releaseyear": 2017, // Год релиза(тип int)
+               "releasestatus": "ongoing", // Статус выхода: ongoing - выходит сейчас; released - вышел; announce - анонс.
+               "eps": 12, // Эпизодов(тип int)
+               "score": 4.12, // Оценки, указываются до 5(тип float)
+               "mangaauthor": "Dagiwara Daisuke", // Автор манги(инфа с шики)
+               "director":  "Kana Fujiwara", // Режиссер
+               tags: [ //
+                  "romantic": true, // boolean
+                  "comedy": true,  // boolean
+                  // ...
+               ],
+               casts: [
+                  "anilibria": true, // boolean
+                  "anidub": false,  // boolean
+                    ]
+               }
+    }
    
 
 
@@ -81,7 +83,6 @@
 
 Кстати, существует возможность получить .m3u8
 Выглядит она примерно так:
-
 .. code-block:: javascript
 
    const filter = {
