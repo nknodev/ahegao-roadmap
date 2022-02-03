@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'Ahegao API'
-copyright = '2021, Ahegao Team'
+copyright = '2022, Ahegao Team. Docs by nknodev.'
 author = 'Ahegao Team'
 
 release = '0.1'
