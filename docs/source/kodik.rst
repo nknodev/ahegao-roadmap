@@ -86,6 +86,7 @@
 Выглядит она примерно так:
 .. code-block:: console
 
+
    const filter = {
     urls: [
     ]
@@ -110,11 +111,11 @@
 
 .. code-block:: console
 
+
    {
    "anime-serials": 11367,
    "anime-films": 1245,
    "allanimes": 12612,
    }
 
-------------
-Конец доков по классу /kodik
+
