@@ -1,9 +1,9 @@
 /kodik
 =====
 
-.. _/video.info:
+.. _/getVideoInfo:
 
-/video.info
+/getVideoInfo
 ------------
 
 Этот метод достает инфу из API Кодика, Шики и Аниксарта, вроде:
@@ -14,6 +14,7 @@
                 token=   -  токенский(не токийский!) *ОБЯЗАТЕЛЬНЫЙ
                 by=   -  как ищем(link - через ссылку; name - по имени) *ОБЯЗАТЕЛЬНЫЙ
 Вывод:
+
 .. code-block:: console
 
     {
@@ -96,3 +97,22 @@
                         
       }
    }, filter);
+
+
+.. _/counter:
+
+/counter
+------------
+
+Счетчик релизов из базы Kodik.
+
+.. code-block:: console
+
+   {
+   "anime-serials": 11367,
+   "anime-films": 1245,
+   "allanimes": 12612,
+   }
+
+------------
+Конец доков по классу /kodik
