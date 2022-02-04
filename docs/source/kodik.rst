@@ -18,7 +18,7 @@
 .. code-block:: console
 
     {
-    "code": 0 // int
+    "code": 200 // int
     "object":
                {
                "title": "Дота2 - топ", // Название на русском
@@ -32,7 +32,7 @@
                "score": 4.12, // Оценки, указываются до 5(тип float)
                "mangaauthor": "Dagiwara Daisuke", // Автор манги(инфа с шики)
                "director":  "Kana Fujiwara", // Режиссер
-               tags: [ //
+               tags: [
                   "romantic": true, // boolean
                   "comedy": true,  // boolean
                   // ...
@@ -40,8 +40,8 @@
                casts: [
                   "anilibria": true, // boolean
                   "anidub": false,  // boolean
-                    ]
-               }
+               ],
+           }
     }
    
 
