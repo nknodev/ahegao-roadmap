@@ -84,7 +84,7 @@
 
 Кстати, существует возможность получить .m3u8
 Выглядит она примерно так:
-.. code-block:: javascript
+.. code-block:: console
 
    const filter = {
     urls: [
