@@ -33,13 +33,13 @@
                "mangaauthor": "Dagiwara Daisuke", // Автор манги(инфа с шики)
                "director":  "Kana Fujiwara", // Режиссер
                tags: [
-                  "romantic": true, // boolean
-                  "comedy": true,  // boolean
+                  "romantic": true,
+                  "comedy": true,
                   // ...
                ],
                casts: [
-                  "anilibria": true, // boolean
-                  "anidub": false,  // boolean
+                  "anilibria",
+                  "anidub",
                ],
            }
     }
@@ -65,25 +65,43 @@
    "link": "blob:https://aniqit.com/..."
    }
    
-.. note:: 
-   
-   К вашему вниманию: у нас нет возможности декодировать blob-ы, так как они довольно непросто устроены, если вы используете JS в своем проекте можете использовать `это`_
-.. _это: https://stackoverflow.com/questions/14952052/convert-blob-url-to-normal-url
+
 
 
 .. _/getVideo:
 
 /getVideo
 ------------
-
 .. note:: 
 
-   Данный метод не проходил тестирования, а значит он будет недоступен в ближайшей финальной версии API. Надеемся, что он скоро появится
+   Класс доступен для владельцев премиум-токенов.
    
 Этот класс очень важен для пользователей API, так как он предоставляет возможность получать декодированный mp4 файл из плеера Kodik, как описано в :ref:`/getVideoLink`, кодик передает файлы для возпроизведения в закодированном виде(Кстати, так делает не только кодик), но сам плеер возпроиводит blob-файлы, получается используя метод :ref:`/getVideoLink` и hls.js, вы можете возпроизводить видео из кодика в сторонних плеерах, поддерживающих blob.
 
+Передаете
+
+.. code-block:: console
+   
+   /getVideo?link=//aniqit.com/serial/40506/bdba0731cc10b9f6169dba1bea31886a/720p
+             token=1234567890
 
 
+.. note:: 
+
+   Нужно передавать ссылку на серию, а не на сериал
+
+Получаете
+
+.. code-block:: console
+      
+      {
+   
+      "360":[{"src":"//cloud.kodik-storage.com/useruploads/70d17edb-6bd8-41e7-aefd-fea8edb6c72a/642bbfc75ab8535e480757c9eef7d2e5:2022020907/360.mp4"],
+      "480":[{"src":"//cloud.kodik-storage.com/useruploads/70d17edb-6bd8-41e7-aefd-fea8edb6c72a/642bbfc75ab8535e480757c9eef7d2e5:2022020907/480.mp4"}],
+      "720":[{"src":"//cloud.kodik-storage.com/useruploads/70d17edb-6bd8-41e7-aefd-fea8edb6c72a/642bbfc75ab8535e480757c9eef7d2e5:2022020907/720.mp4"}],
+      "apistatus": 200
+   
+      }
 
 
 .. _/counter:
