@@ -28,7 +28,6 @@
                "shiki": "https://shikimori.one/...", // ссылка на шики
                "releaseyear": 2017, // Год релиза(тип int)
                "releasestatus": "ongoing", // Статус выхода: ongoing - выходит сейчас; released - вышел; announce - анонс.
-               "eps": 12, // Эпизодов(тип int)
                "score": 4.12, // Оценки, указываются до 5(тип float)
                "author": "Dagiwara Daisuke", // Автор манги(инфа с шики)
                "tags": [ //
